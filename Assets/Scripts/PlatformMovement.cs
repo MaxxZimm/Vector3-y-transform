@@ -11,6 +11,9 @@ public class PlatformMovement : MonoBehaviour
     public GameObject prefab1;
     public GameObject prefab2;
 
+    public GameObject BaseDer;
+    public GameObject BaseIzq;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,12 +33,16 @@ public class PlatformMovement : MonoBehaviour
         if(transform.position.x > 1.85)
         {
             right = false;
-            Instantiate(prefab1);
+            GameObject clon;
+            clon = Instantiate(prefab1);
+            clon.transform.position = BaseDer.transform.position + Vector3.up;
         }
         else if (transform.position.x < -1.85)
         {
             right = true;
-            Instantiate(prefab2);
+            GameObject clon;
+            clon = Instantiate(prefab2);
+            clon.transform.position = BaseIzq.transform.position + Vector3.up;
         }
 
     }

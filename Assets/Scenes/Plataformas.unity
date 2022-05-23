@@ -477,9 +477,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d449868b72a10442aed5612d2a36246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSpeed: 0.05
+  xSpeed: 0.1
   prefab1: {fileID: 8546625974836692243, guid: df4de4f47d391e44ab44312d487e9c0c, type: 3}
   prefab2: {fileID: 7735390960073436012, guid: b7c213ce8e06f7b4385e68160ea27203, type: 3}
+  BaseDer: {fileID: 1348044335}
+  BaseIzq: {fileID: 855568749}
 --- !u!65 &1942113451
 BoxCollider:
   m_ObjectHideFlags: 0
